@@ -3962,6 +3962,62 @@ ul {
   width: 100%;
 }
 
+/*****************adv banner part ***************/
+.adv-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/pg1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.adv-banner_part {
+  height: 480px;
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+}
+
+@media (max-width: 576px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .adv-banner_part {
+    height: 178px;
+    background-image: none;
+    background-color: #000;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .adv-banner_part {
+    height: 230px;
+    background-image: none;
+    background-color: #000;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .adv-banner_part {
+    height: 300px;
+    background-image: none;
+    background-color: #000;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .adv-banner_part {
+    height: 365px;
+	background-color: #000;
+  }
+}
+
+
 /**************** service_part css start ****************/
 /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_happy_client.scss */
 /*.happy_client {
