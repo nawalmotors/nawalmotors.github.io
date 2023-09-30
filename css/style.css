@@ -144,7 +144,7 @@ a {
 
 /* line 66, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_common.scss */
 a:hover {
-  color: #5dc5fc !important;
+  color: rgba(255, 255, 15, 0.87) !important;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -855,6 +855,7 @@ ul {
 
 .btn_1:hover {
   border: 2px solid yellow; /* Add the border on hover for the button */
+  box-shadow: 0 0 10px yellow;
 }
 
 .btn_1:hover::before {
