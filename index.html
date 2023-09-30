@@ -108,6 +108,7 @@
 				Your browser does not support the video tag.
 			</video>
 			<canvas id="grid-overlay"></canvas>
+			<div class="text-overlay" style="display: none;"></div>
 		</section>
 	</section>
 
@@ -242,6 +243,45 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     video.addEventListener('loadedmetadata', createGridOverlay);
 </script>
 
+<script>
+const video = document.getElementById('myVideo');
+const textOverlay = document.querySelector('.text-overlay');
+const textMessages = ['Nawal Motors<br>in Mathura', 'Leading Car<br>Dealership', 'Trusted Services<br>Provider']; // Add your desired text messages here
+let currentIndex = 0;
+
+video.addEventListener('timeupdate', () => {
+    // Customize the logic for when to switch text
+    if (video.currentTime >= 2 && video.currentTime <= 20) {
+        textOverlay.style.display = 'block';
+        textOverlay.textContent = textMessages[currentIndex];
+    } else {
+        textOverlay.style.display = 'none';
+    }
+});
+
+// Function to switch to the next text message in the array
+function switchText() {
+    currentIndex = (currentIndex + 1) % textMessages.length;
+    textOverlay.textContent = textMessages[currentIndex];
+}
+
+// Set an interval to switch text every 5 seconds (adjust as needed)
+setInterval(switchText, 10000);
+
+/*
+// Get the video element
+const video = document.getElementById('myVideo');
+
+// Add an event listener to update the text overlay during video playback
+video.addEventListener('timeupdate', () => {
+    // Customize this logic to show/hide text at specific times in your video
+    if (video.currentTime >= 10 && video.currentTime <= 20) {
+        document.querySelector('.text-overlay').style.display = 'block';
+    } else {
+        document.querySelector('.text-overlay').style.display = 'none';
+    }
+});*/
+</script>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
