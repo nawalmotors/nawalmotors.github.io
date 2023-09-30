@@ -1,11 +1,7 @@
 /**************** extend css start ****************/
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Poppins:300,800|Roboto:300i,400,500,700");
 /* line 8, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_extends.scss */
-.btn_2 {
-  background-image: -webkit-linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
-  background-image: -o-linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
-  background-image: linear-gradient(131deg, #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
-}
+
 
 /**************** extend css start ****************/
 /**************** common css start ****************/
@@ -862,9 +858,6 @@ ul {
   transform: scaleX(1.2) scaleY(1.2);
 }
 
-
-
-
 @media (max-width: 576px) {
   /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_1 {
@@ -889,29 +882,52 @@ ul {
   }
 }
 
-/* line 60, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+/* Style the buttons initially */
 .btn_2 {
-  display: inline-block;
-  padding: 19.5px 42px;
-  box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
+  width: 225px; /* Set a fixed width */
+  height: 85px; /* Set a fixed height */
+  display: flex; /* Use flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #000;
   font-size: 14px;
-  color: #fff;
-  text-transform: capitalize;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 50px;
-  margin-top: 50px;
-  background-size: 300% 100%;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin-top: 5px;
+  margin-left: 15%;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  position: relative;
+  text-align: center; /* Center the text horizontally */
 }
 
-/* line 72, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+/* Create a curly design on hover */
+.btn_2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent; /* Set an initial transparent border for the pseudo-element */
+  border-radius: 10px;
+  z-index: -1;
+  transition: transform .3s ease-in-out;
+}
+
 .btn_2:hover {
-  color: #fff !important;
-  background-size: 100% 100%;
+  border: 2px solid yellow; /* Add the border on hover for the button */
+  box-shadow: 0 0 10px yellow;
+}
+
+.btn_2:hover::before {
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 @media (max-width: 576px) {
-  /* line 60, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_2 {
     padding: 14px 30px;
     margin-top: 25px;
@@ -919,7 +935,7 @@ ul {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 60, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_2 {
     padding: 14px 30px;
     margin-top: 30px;
@@ -927,7 +943,7 @@ ul {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 60, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_2 {
     padding: 14px 30px;
     margin-top: 30px;
@@ -4016,6 +4032,102 @@ ul {
 	background-color: #000;
   }
 }
+
+/* Define a CSS class for the h1 element */
+.h1-custom {
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #FFD700; /* Adjust the text color as needed */
+  text-align: center; /* Center-align the text */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-bottom: 60px; /* Add margin to control spacing if needed */
+}
+
+/* Define a custom CSS class for <p> elements with content justification */
+.p-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text horizontally */
+  font-size: 21px;
+  /*font-weight: bold;*/
+  color: #f7f7f7; /* Adjust the text color as needed */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-bottom: 50px; /* Add margin to control spacing if needed */
+}
+
+
+/**************SALES START*************************/
+.sales-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/pg4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Send the background image to the back */
+}
+
+.sales_client {
+  text-align: center;
+}
+
+.sales_client img {
+  width: 78px;
+  height: 58px;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.sales_client h4 {
+  color: #FFD700;
+  font-size: 20px;
+  font-size: 500;
+  padding-left: 28px;
+  margin-top: 28px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 576px) {
+  /* line 57, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_happy_client.scss */
+  .sales_client h4 {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 57, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_happy_client.scss */
+  .sales_client h4 {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 57, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_happy_client.scss */
+  .sales_client h4 {
+    margin-top: 15px;
+  }
+}
+/************** SALES END*************************/
+/************** CONNECT START*************************/
+.connect-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/pg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Send the background image to the back */
+}
+/************** CONNECT END*************************/
 
 
 /**************** service_part css start ****************/
