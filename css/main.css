@@ -5,6 +5,32 @@ Last change:
 Assigned to:  Bach Le
 Primary use:  
 -------------------------------------------------------------------*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px; /* Adjust the width of the sidebar */
+  background-color: #333;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+#scrollButton {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
 /* Media query for screens with a maximum width of 1500px */
 @media (max-width: 555px) {
 	#bg-video-section {

@@ -823,28 +823,46 @@ ul {
   background: transparent;
 }
 
-/* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+/* Style the buttons initially */
 .btn_1 {
   display: inline-block;
-  padding: 19.5px 42px;
-  background-color: #5dc5fd;
+  padding: 5px 10px;
+  background-color: transparent;
   font-size: 14px;
-  text-transform: uppercase;
-  color: #fff;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  margin-top: 44px;
+  margin-top: 5px;
   border-radius: 4px;
   font-weight: 500;
-  box-shadow: 0px 10px 30px 0px #a3cae7;
+  border: 2px solid transparent; /* Set an initial transparent border */
+  position: relative;
 }
 
-/* line 38, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
-.btn_1:hover {
-  color: #fff !important;
-  box-shadow: 0px 10px 30px #FFDF00;//
+/* Create a curly design on hover */
+.btn_1::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent; /* Set an initial transparent border for the pseudo-element */
+  border-radius: 10px;
+  z-index: -1;
+  transition: transform .3s ease-in-out;
 }
+
+.btn_1:hover {
+  border: 2px solid yellow; /* Add the border on hover for the button */
+}
+
+.btn_1:hover::before {
+  transform: scaleX(1.2) scaleY(1.2);
+}
+
+
+
 
 @media (max-width: 576px) {
   /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
