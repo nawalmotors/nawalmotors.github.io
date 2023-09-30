@@ -219,10 +219,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         canvas.height = video.offsetHeight;
 
         const context = canvas.getContext('2d');
-        context.strokeStyle = 'rgba(0, 0, 0, 0.2)'; // Adjust the color and opacity as needed
+        context.strokeStyle = 'rgba(0, 0, 0, 0.9)'; // Adjust the color and opacity as needed
         context.lineWidth = 1; // Adjust the line width as needed
 
-        const gridSize = 20; // Adjust the grid size as needed (e.g., increase for larger grid spacing)
+        const gridSize = 2; // Adjust the grid size as needed (e.g., increase for larger grid spacing)
 
         for (let x = 0; x < canvas.width; x += gridSize) {
             context.moveTo(x, 0);
