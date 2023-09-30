@@ -1,0 +1,46 @@
+.nbutton {
+    background-color: #5dc5fd;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 50px;
+    border: 2px solid #5dc5fd;
+    margin-top: 44px;
+}
+.nbutton:hover {
+	background:none;
+	border: 2px solid #5dc5fd;
+	
+}
+.nbutton1 {
+    background-color: #5dc5fd;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 50px;
+    border: 2px solid #5dc5fd;
+    margin-top: 10px;
+}
+.nbutton1:hover {
+	background:none;
+	border: 2px solid #5dc5fd;
+	
+}
+.send_message{
+    color:'black';
+}
+.send_message:hover{
+    color: #5dc5fc;
+    text-decoration: none;
+    transition: 0.5s;
+}

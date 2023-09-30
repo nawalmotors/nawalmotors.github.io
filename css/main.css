@@ -7,6 +7,23 @@ Primary use:
 -------------------------------------------------------------------*/
 
 
+#bg-video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Use viewport height to ensure it covers the entire screen */
+    overflow: hidden;
+}
+
+#bg-video-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will make sure the video covers the entire container without cropping */
+    z-index: -1;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
@@ -143,7 +160,7 @@ Primary use:
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #ffff4d;
 }
 
 .simpleslide100-item {
