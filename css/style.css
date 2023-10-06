@@ -948,53 +948,76 @@ ul {
   }
 }
 
-/* line 93, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+
+/* Style the buttons initially */
 .btn_3 {
+  width: 225px; /* Set a fixed width */
+  height: 85px; /* Set a fixed height */
+  display: flex; /* Use flex display */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #fff;
   font-size: 14px;
-  color: #112e41;
-  text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 2px solid #007bff; /* Add your desired border color here */
+  margin-top: 5px;
+  margin-left: 15%;
+  border-radius: 4px;
   font-weight: 500;
-  letter-spacing: 1.3px;
-  padding-top: 32px;
-  display: inline-block;
-  display: flex;
-  align-items: center;
+  position: relative;
+  text-align: center; /* Center the text horizontally */
 }
 
-/* line 104, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
-.btn_3 span {
-  margin-left: 13px;
-  margin-top: 2px;
+/* Create a curly design on hover */
+.btn_3::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent; /* Set an initial transparent border for the pseudo-element */
+  border-radius: 10px;
+  z-index: -1;
+  transition: transform .3s ease-in-out;
+}
+
+.btn_3:hover {
+  border: 2px solid #356ca9; /* Add the border on hover for the button */
+  box-shadow: 0 0 10px #356ca9;
+  color: #356ca9 !important;
+}
+
+.btn_3:hover::before {
+  transform: scaleX(1.2) scaleY(1.2);
 }
 
 @media (max-width: 576px) {
-  /* line 93, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_3 {
-    padding-top: 0px;
+    padding: 14px 30px;
+    margin-top: 25px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 93, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_3 {
-    padding-top: 0px;
+    padding: 14px 30px;
+    margin-top: 30px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 93, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
+  /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_3 {
-    padding-top: 0px;
+    padding: 14px 30px;
+    margin-top: 30px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 93, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
-  .btn_3 {
-    padding-top: 0px;
-  }
-}
 
 /* line 122, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
 .btn_4 {
@@ -3978,6 +4001,70 @@ ul {
   width: 100%;
 }
 
+
+
+/*****************abt banner part ***************/
+.abt-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/Posters/bg1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.abt-banner_part {
+  height: 480px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .abt-banner_part {
+    height: 178px;
+    background-image: none;
+    background-color: #fff;
+  }
+  .abt-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .abt-banner_part {
+    height: 230px;
+    background-image: none;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .abt-banner_part {
+    height: 300px;
+    background-image: none;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .abt-banner_part {
+    height: 365px;
+	background-color: #fff;
+  }
+}
+
+
 /*****************adv banner part ***************/
 .adv-bg {
     position: absolute;
@@ -4001,7 +4088,7 @@ ul {
 @media (max-width: 576px) {
   /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
   .adv-banner_part {
-    height: 178px;
+    height: 150px;
     background-image: none;
     background-color: #fff;
   }
@@ -4135,7 +4222,8 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-image: url('../images/Posters/pg3.jpg'); 
+	opacity: 0.1; /* You can adjust the opacity to your liking */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -8104,8 +8192,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area {
-  background-color: #000;
-  padding: 100px 0px 20px;
+  background-color: #fff;
+  padding: 70px 0px 30px;
 }
 
 @media (max-width: 991px) {
@@ -8380,7 +8468,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 199, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area .copyright_part_text p {
-  color: #777777;
+  color: #356ca9;
 }
 
 @media (max-width: 576px) {
