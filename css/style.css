@@ -951,7 +951,7 @@ ul {
 
 /* Style the buttons initially */
 .btn_3 {
-  width: 275px; /* Set a fixed width */
+  width: 270px; /* Set a fixed width */
   height: 85px; /* Set a fixed height */
   display: flex; /* Use flex display */
   justify-content: center; /* Center horizontally */
@@ -4017,43 +4017,107 @@ ul {
 }
 
 .abt-banner_part {
-  height: 480px;
   position: relative;
   z-index: 1;
   background-color: #fff;
 }
 
+.p-custom1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: justify;
+  font-size: 18px;
+  /*font-weight: bold;*/
+  color: #000; /* Adjust the text color as needed */
+  margin-top: 18px; /* Add margin to control spacing if needed */
+  margin-bottom:0;
+  margin-left:50%;
+  margin-right:10%;
+}
+
+/* Define a CSS class for the h1 element */
+.h1-custom1 {
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #FFD700; /* Adjust the text color as needed */
+  text-align: center; /* Center-align the text */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-bottom: 20px; /* Add margin to control spacing if needed */
+}
+
 @media (max-width: 576px) {
   /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
   .abt-banner_part {
-    height: 178px;
+    height: 340px;
     background-image: none;
     background-color: #fff;
   }
   .abt-bg {
     position: absolute;
     top: 0;
+	margin-top:80px;
     left: 0;
     width: 100%;
   }
+  .p-custom1 {
+  display: block;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: justify;
+  font-size: 10px;
+  /*font-weight: bold;*/
+  color: #000; /* Adjust the text color as needed */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-left:10%;
+  margin-right:10%;
+}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
-  .abt-banner_part {
-    height: 230px;
-    background-image: none;
-    background-color: #fff;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
   .abt-banner_part {
     height: 300px;
     background-image: none;
     background-color: #fff;
   }
+    .p-custom1 {
+  display: block;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: justify;
+  font-size: 13px;
+  /*font-weight: bold;*/
+  color: #000; /* Adjust the text color as needed */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-left:50%;
+  margin-right:5%;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_banner.scss */
+  .abt-banner_part {
+    height: 340px;
+    background-image: none;
+    background-color: #fff;
+  }
+      .p-custom1 {
+  display: block;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: justify;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  color: #000; /* Adjust the text color as needed */
+  margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-left:50%;
+  margin-right:5%;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -4127,7 +4191,7 @@ ul {
   color: #FFD700; /* Adjust the text color as needed */
   text-align: center; /* Center-align the text */
   margin-top: 20px; /* Add margin to control spacing if needed */
-  margin-bottom: 60px; /* Add margin to control spacing if needed */
+  margin-bottom: 50px; /* Add margin to control spacing if needed */
 }
 
 /* Define a custom CSS class for <p> elements with content justification */
@@ -4136,13 +4200,16 @@ ul {
   flex-direction: column;
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text horizontally */
+  text-align: justify; /* Center text horizontally */
   font-size: 14px;
   /*font-weight: bold;*/
   color: #f7f7f7; /* Adjust the text color as needed */
   margin-top: 20px; /* Add margin to control spacing if needed */
+  margin-left:5%;
+  margin-right:5%;
   margin-bottom: 50px; /* Add margin to control spacing if needed */
 }
+
 
 
 /**************SALES START*************************/
