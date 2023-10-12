@@ -949,7 +949,7 @@ ul {
 
 /* Style the buttons initially */
 .btn_3 {
-  width: 270px; /* Set a fixed width */
+  width: 250px; /* Set a fixed width */
   height: 85px; /* Set a fixed height */
   display: flex; /* Use flex display */
   justify-content: center; /* Center horizontally */
@@ -961,7 +961,8 @@ ul {
   transition: all .4s ease-in-out;
   border: 2px solid #007bff; /* Add your desired border color here */
   margin-top: 5px;
-  margin-left: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 62px;
   font-weight: 500;
   position: relative;
