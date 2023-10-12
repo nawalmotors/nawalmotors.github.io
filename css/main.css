@@ -30,7 +30,7 @@ Primary use:
   cursor: pointer;
 }
 
-
+	
 /* Media query for screens with a maximum width of 1500px */
 @media (max-width: 555px) {
 	#bg-video-section {
@@ -42,7 +42,7 @@ Primary use:
 		justify-content: center;
 		align-items: center;
 	}
-
+	
 	#bg-video-section video {
 		position: absolute;
 		top: 50%;

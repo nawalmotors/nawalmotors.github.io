@@ -2859,6 +2859,53 @@ ul {
 	background-color: #000;
 }
 
+.text-overlay1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	color: #FFD700; /* Text color */
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold; /* Make the text bold */
+	font-size: 50px; /* Adjust the font size as needed */
+	font-family: "Times New Roman", Times, serif;
+}
+
+.text-overlay2 {
+	position: absolute;
+	top: 25%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	color: #FFD700; /* Text color */
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold; /* Make the text bold */
+	font-size: 70px; /* Adjust the font size as needed */
+	font-family: "Times New Roman", Times, serif;
+}
+
+.text-overlay-p {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	color: #FFD700; /* Text color */
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 25%;
+	margin-right: 10%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	justify-content: center;
+	text-align: Center;
+	font-size: 18px; /* Adjust the font size as needed */
+	font-family: "Times New Roman", Times, serif;
+}
+
 .hero-image {
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/d12.jpg");
   height: 900px;
