@@ -2844,6 +2844,21 @@ ul {
   background-color: #fff;
 }
 
+.banner_part1 {
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+}
+
+.simpleslide100-item.bg-img1 {
+  opacity: 0.4; /* Adjust the opacity value as needed */
+}
+
+.contact-section{
+	background-color: #000;
+}
+
 .hero-image {
   background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/d12.jpg");
   height: 900px;
@@ -6226,7 +6241,9 @@ ul {
 .contact-title {
   font-size: 27px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: Center;
+  color: #ffff4d;
 }
 
 /* line 46, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_contact.scss */
@@ -6241,11 +6258,12 @@ ul {
 
 /* line 54, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_contact.scss */
 .form-contact .form-control {
-  border: 1px solid #f0e9ff;
+  border: 1px solid #ffff4d;
   border-radius: 5px;
   height: 48px;
+  color: #007bff;
   padding-left: 18px;
-  font-size: 13px;
+  font-size: 16px;
   background: transparent;
 }
 

@@ -1,6 +1,6 @@
 .nbutton {
-    background-color: #5dc5fd;
-    color: black;
+    background-color: #007bff;
+    color: #ffff4d;
     padding: 10px 30px;
     text-align: center;
     text-decoration: none;
@@ -9,13 +9,12 @@
     margin: 4px 2px;
     cursor: pointer; 
     border-radius: 50px;
-    border: 2px solid #5dc5fd;
+    border: 2px solid #007bff;
     margin-top: 44px;
 }
 .nbutton:hover {
-	background:none;
-	border: 2px solid #5dc5fd;
-	
+	background-color: #ffff4d;
+	border: 2px solid #ffff4d;
 }
 .nbutton1 {
     background-color: #5dc5fd;
