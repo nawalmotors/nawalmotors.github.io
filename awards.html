@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
+    <!-- swiper CSS 
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.css">-->
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- button effects -->
@@ -118,7 +118,7 @@
 			</video>
 			<canvas id="grid-overlay"></canvas>
 			<div class="text-overlay">
-				<p>About Us</p>
+				<p>Awards</p>
 			</div>
 		</section>
 	</section>
@@ -410,53 +410,7 @@
     <!-- footer part end-->
 
 
-<script>
-    // Function to create grid lines on the canvas
-    function createGridOverlay() {
-        const canvas = document.getElementById('grid-overlay');
-        const video = document.getElementById('bg-video');
 
-        canvas.width = video.offsetWidth;
-        canvas.height = video.offsetHeight;
-
-        const context = canvas.getContext('2d');
-        context.strokeStyle = 'rgba(0, 0, 0, 0.3)'; // Adjust the color and opacity as needed
-        context.lineWidth = 1; // Adjust the line width as needed
-
-        const gridSize = 10; // Adjust the grid size as needed (e.g., increase for larger grid spacing)
-
-        for (let x = 0; x < canvas.width; x += gridSize) {
-            context.moveTo(x, 0);
-            context.lineTo(x, canvas.height);
-        }
-
-        for (let y = 0; y < canvas.height; y += gridSize) {
-            context.moveTo(0, y);
-            context.lineTo(canvas.width, y);
-        }
-
-        context.stroke();
-    }
-
-    // Call the createGridOverlay function when the video is loaded
-    const video = document.getElementById('bg-video');
-    video.addEventListener('loadedmetadata', createGridOverlay);
-</script>
-
-<script>
-// Get the video element
-const video = document.getElementById('myVideo');
-
-// Add an event listener to update the text overlay during video playback
-video.addEventListener('timeupdate', () => {
-    // Customize this logic to show/hide text at specific times in your video
-    if (video.currentTime >= 10 && video.currentTime <= 20) {
-        document.querySelector('.text-overlay').style.display = 'block';
-    } else {
-        document.querySelector('.text-overlay').style.display = 'none';
-    }
-});
-</script>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
