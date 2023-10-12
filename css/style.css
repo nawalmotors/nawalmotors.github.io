@@ -8457,21 +8457,21 @@ h5 {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 120, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
   .footer-area .footer_3 .footer_img .single_footer_img {
-    width: 15%;
+    width: 30%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 120, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
   .footer-area .footer_3 .footer_img .single_footer_img {
-    width: 10%;
+    width: 30%;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* line 120, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
   .footer-area .footer_3 .footer_img .single_footer_img {
-    width: 10%;
+    width: 30%;
   }
 }
 
