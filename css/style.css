@@ -2131,6 +2131,8 @@ ul {
   margin-right: 15px;
 }
 
+
+
 /* line 1149, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_blog.scss */
 .single-post-area .navigation-top .social-icons li:last-child {
   margin: 0;
@@ -2585,6 +2587,7 @@ ul {
   /*color: #112e41 !important;*/
   font-size: 16px;
   padding: 9px 24px !important;
+  color: rgba(255, 255, 15, 0.87) !important;
   /*font: var(--fnt,var(--font_1));
   text-transform: uppercase;
   font-weight: 5000;*/
@@ -2705,6 +2708,7 @@ ul {
   /* line 125, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item a {
     padding: 5px 15px !important;
+	color: rgba(255, 255, 15, 0.87) !important;
   }
   .navbar-nav .nav-item .nav-link {
     color: #356ca9;
@@ -2765,6 +2769,7 @@ ul {
   /* line 180, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item a {
     padding: 5px 15px !important;
+	color: rgba(255, 255, 15, 0.87) !important;
   }
   /* line 187, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .dropdown .dropdown-menu {
@@ -2806,10 +2811,12 @@ ul {
   /* line 226, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item {
     padding: 10px 15px !important;
+	
   }
   /* line 229, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .main_menu .main-menu-item .nav-item a {
     padding: 5px 15px !important;
+	color: rgba(255, 255, 15, 0.87) !important;
   }
   /* line 236, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_menu.scss */
   .dropdown .dropdown-menu {
@@ -8253,6 +8260,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0px !important;
 }
 
+
+
+
+
+/* footer area start */
+
+
 /* line 2, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area {
   background-color: #000;
@@ -8285,7 +8299,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 19, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area .single-footer-widget p {
-  color: #356ca9;
+  color:#007bff; 
   font-size: 14px;
   line-height: 1.8;
 }
@@ -8332,7 +8346,7 @@ h5 {
 
 /* line 40, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_footer.scss */
 .footer-area .single-footer-widget ul li a {
-  color: #356ca9;
+  color:#007bff; 
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 15px;
