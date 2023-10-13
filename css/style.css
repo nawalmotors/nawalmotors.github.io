@@ -24,7 +24,7 @@ a+a {
   bottom: 50%;
   right: 0px;
   z-index: 9999; /* Set a high z-index value to ensure it's above other content */
-  background-color: #007bff;
+  background-color: #000;
   color: #ffff4d;
   border: none;
   border-radius: 10%;
@@ -38,7 +38,7 @@ a+a {
 }
 
 .floating-button:hover {
-  background-color: #000;
+  background-color: #007bff;
 }
 
 .floating-button1 {
@@ -46,7 +46,7 @@ a+a {
   bottom: 44%;
   right: 0px;
   z-index: 9999; /* Set a high z-index value to ensure it's above other content */
-  background-color: #007bff;
+  background-color: #000;
   color: #ffff4d;
   border: none;
   border-radius: 10%;
@@ -60,7 +60,7 @@ a+a {
 }
 
 .floating-button1:hover {
-  background-color: #000;
+  background-color: #007bff;
 }
 
 .floating-counter {
