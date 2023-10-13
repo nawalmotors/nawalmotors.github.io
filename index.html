@@ -188,6 +188,7 @@
                         <img src="images/icon/net.png" alt="cap">
                         <span class="counter">4</span>
                         <h4>SALES<br>NETWORK</h4>
+					
                     </div>
                 </div>
             </div>
@@ -209,6 +210,7 @@
 				</div>
 			</div>
 			<div class="row">
+
 				<p class="p-custom">Experience our world-class services tailored to elevate your car ownership to unparalleled heights. Our offerings encompass state-of-the-art workshops, authentic car care products, diligently certified technicians, and an exceptional premium customer service experience. Your success and satisfaction are the pillars of our commitment, and we spare no effort in ensuring you consistently enjoy the finest driving experiences.</p>
 			</div>
 			<div class="row">
@@ -240,7 +242,9 @@
         </div>
     </section>
     <!-- sales end -->
-	
+					<!-- Add the counter instance somewhere to your template... -->
+<div class="counterapi" style="min-height:44px; color:yellow;" key="nawal"></div>
+
 	<!-- connect start -->
     <section class="happy_client">
 	<div class="connect-bg"></div>
@@ -607,7 +611,8 @@
     const video = document.getElementById('bg-video');
     video.addEventListener('loadedmetadata', createGridOverlay);
 </script>
-
+<!-- counterAPI library, insert anywhere on the page. -->
+<script src="https://counterapi.com/c.js?ns=nawalmotors.com" async ></script>
 <script>
 // Get the video element
 const video = document.getElementById('myVideo');
