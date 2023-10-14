@@ -17,6 +17,16 @@ a+a {
   margin-left: 10px;
 }
 
+.large-item {
+    padding: 20px; /* Increase padding for larger items */
+    text-align: center;
+	margin-bottom:20px;
+    border: 1px solid #ccc; /* Add a border for separation */
+    background-color: #f7f7f7; /* Add a background color for emphasis */
+    border-radius: 5px; /* Add rounded corners */
+	height:370px !important;
+}
+
 
 
 .floating-button {
@@ -93,6 +103,47 @@ a+a {
   align-items: center;
   justify-content: center;
 }
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 900px%; /* Adjust the width as needed */
+}
+
+.slider {
+  display: flex;
+  width: max-content;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  flex: 0 0 calc(100% / 3); /* Show 3 items at a time */
+  width: 250px; /* Adjust the width as needed */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
 
 /* line 9, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_common.scss */
 .message_submit_form:focus {
@@ -1026,17 +1077,18 @@ ul {
 
 /* Style the buttons initially */
 .btn_3 {
-  width: 250px; /* Set a fixed width */
-  height: 85px; /* Set a fixed height */
+  width: 200px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
   display: flex; /* Use flex display */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  background-color: #fff;
+  background-color: #000;
+  color: #fff !important;
   font-size: 14px;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  border: 2px solid #007bff; /* Add your desired border color here */
+  border: 2px solid #000; /* Add your desired border color here */
   margin-top: 5px;
   margin-left: 5%;
   margin-right: 5%;
@@ -1061,9 +1113,10 @@ ul {
 }
 
 .btn_3:hover {
-  border: 2px solid #356ca9; /* Add the border on hover for the button */
-  box-shadow: 0 0 10px #356ca9;
-  color: #356ca9 !important;
+  border: 2px solid #000; /* Add the border on hover for the button */
+  box-shadow: 0 0 10px #000;
+  color: #000 !important;
+  background-color: #fff;
 }
 
 .btn_3:hover::before {
@@ -1075,14 +1128,20 @@ ul {
   .btn_3 {
     padding: 14px 30px;
     margin-top: 25px;
+	width: 100%; /* Set a fixed width */
+	height: 50px; /* Set a fixed height */
+	margin-right:20px;
   }
-}
+ }
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 24, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
   .btn_3 {
     padding: 14px 30px;
     margin-top: 30px;
+ 	width: 180px; /* Set a fixed width */
+	height: 40px; /* Set a fixed height */
   }
 }
 
@@ -1091,9 +1150,19 @@ ul {
   .btn_3 {
     padding: 14px 30px;
     margin-top: 30px;
+	width: 150px; /* Set a fixed width */
+	height: 40px; /* Set a fixed height */
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+	.btn_3 {
+    padding: 14px 30px;
+    margin-top: 30px;
+	width: 150px; /* Set a fixed width */
+	height: 40px; /* Set a fixed height */
+  }
+}
 
 /* line 122, E:/170 Kanox Agency/170_Kanox_Agency_html/sass/_button.scss */
 .btn_4 {
@@ -4462,8 +4531,8 @@ ul {
   width: 78px;
   height: 58px;
   display: inline-block;
-  margin-bottom: 8px;
-  margin-left: 15px;
+  /*margin-bottom: 8px;
+  margin-left: 15px;*/
 }
 
 .sales_client h4 {
@@ -4511,6 +4580,30 @@ ul {
     z-index: -1; /* Send the background image to the back */
 }
 /************** CONNECT END*************************/
+.cars-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/carsbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Send the background image to the back */
+}
+.carsban-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/cars4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Send the background image to the back */
+}
 /************** drive START*************************/
 .drive-bg {
     position: absolute;
