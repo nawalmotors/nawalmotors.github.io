@@ -4255,6 +4255,18 @@ ul {
     background-position: center center;
 }
 
+.owned-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/Posters/TMA.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 .abt-banner_part {
   position: relative;
   z-index: 1;
@@ -4328,6 +4340,13 @@ ul {
     position: absolute;
     top: 0;
 	margin-top:80px;
+    left: 0;
+    width: 100%;
+  }
+  .owned-bg {
+    position: absolute;
+    top: 0;
+	margin-top:350px;
     left: 0;
     width: 100%;
   }
@@ -4566,7 +4585,6 @@ ul {
   }
 }
 /************** SALES END*************************/
-/************** CONNECT START*************************/
 .connect-bg {
     position: absolute;
     top: 0;
@@ -4574,6 +4592,19 @@ ul {
     width: 100%;
     height: 100%;
     background-image: url('../images/Posters/pg6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Send the background image to the back */
+}
+/************** CONNECT START*************************/
+.serv-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Posters/pg5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -4611,8 +4642,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/Posters/pg3.jpg'); 
-	opacity: 0.1; /* You can adjust the opacity to your liking */
+    background-image: url('../images/Posters/pg2.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
